@@ -1,9 +1,9 @@
 {
-  "name": "roots/bedrock",
+  "name": "pixelgradelt/site",
   "type": "project",
   "license": "MIT",
-  "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
-  "homepage": "https://roots.io/bedrock/",
+  "description": "A Pixelgrade LT WordPress site.",
+  "homepage": "https://pixelgradelt.com",
   "authors": [
     {
       "name": "Scott Walkinshaw",
@@ -14,21 +14,21 @@
       "name": "Ben Word",
       "email": "ben@benword.com",
       "homepage": "https://github.com/retlehs"
+    },
+    {
+      "name": "Vlad Olaru",
+      "email": "vlad@pixelgrade.com",
+      "homepage": "https://thinkwritecode.com"
     }
   ],
   "keywords": [
-    "bedrock", "composer", "roots", "wordpress", "wp", "wp-config"
+    "pixelgradelt", "bedrock", "composer", "roots", "wordpress", "wp", "wp-config"
   ],
   "support": {
-    "issues": "https://github.com/roots/bedrock/issues",
-    "forum": "https://discourse.roots.io/category/bedrock"
+    "issues": "https://pixelgradelt.com",
+    "forum": "https://pixelgradelt.com"
   },
   "repositories": [
-    {
-      "type": "composer",
-      "url": "https://wpackagist.org",
-      "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
-    }
   ],
   "require": {
     "php": ">=7.1",
@@ -38,19 +38,11 @@
     "roots/bedrock-autoloader": "^1.0",
     "roots/wordpress": "5.7",
     "roots/wp-config": "1.0.0",
-    "roots/wp-password-bcrypt": "1.0.0",
-    "wpackagist-plugin/akismet": "dev-trunk",
-    "wp-media/wp-rocket": "^3.8",
-    "wp-media/wp-rocket-cli": "^1.2",
-    "wp-media/imagify-plugin": "^1.9",
-    "yoast/wordpress-seo": "^15.7",
-    "wpackagist-plugin/customify": "*",
-    "wpackagist-plugin/nova-blocks": "*",
-    "wpackagist-plugin/wordpress-importer": "*"
+    "roots/wp-password-bcrypt": "1.0.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.5.8",
-    "roave/security-advisories": "dev-master"
+    "roave/security-advisories": "dev-latest"
   },
   "config": {
     "optimize-autoloader": true,
