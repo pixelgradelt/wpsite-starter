@@ -43,7 +43,7 @@
     "wp-media/wp-rocket": "^3.8",
     "wp-media/wp-rocket-cli": "^1.2",
     "wp-media/imagify-plugin": "^1.9",
-    "yoast/wordpress-seo": "^15.7",
+    "yoast/wordpress-seo": "^16.2",
     "wpackagist-plugin/customify": "*",
     "wpackagist-plugin/nova-blocks": "*",
     "wpackagist-plugin/wordpress-importer": "*"
