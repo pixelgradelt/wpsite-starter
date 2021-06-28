@@ -19,6 +19,11 @@ On top of what Bedrock offers, we lay our PixelgradeLT ecosystem to deliver for 
 - Autoloader for mu-plugins (use regular plugins as mu-plugins)
 - Enhanced security (separated web root and secure passwords with [wp-password-bcrypt](https://github.com/roots/wp-password-bcrypt))
 
+## Dig Deeper
+
+If you want to dig deeper and understand at a more fundamental level the way the various parts work, here are a few pointers:
+- The Bedrock [documentation](https://roots.io/docs/bedrock/master/composer/)
+
 ## Requirements
 
 - PHP >= 7.1
