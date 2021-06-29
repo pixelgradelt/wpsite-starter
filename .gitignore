@@ -11,7 +11,7 @@ web/wp
 web/.htaccess
 
 # Temporary storage
-lt/composer
+lt/composer/*
 !lt/composer/.gitkeep
 
 # Logs
