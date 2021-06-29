@@ -10,8 +10,14 @@ web/app/uploads/*
 web/wp
 web/.htaccess
 
+# Temporary storage
+lt/composer
+!lt/composer/.gitkeep
+
 # Logs
 *.log
+lt/logs/*
+!lt/logs/.gitkeep
 
 # Dotenv
 .env

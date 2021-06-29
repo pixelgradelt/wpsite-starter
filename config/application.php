@@ -17,6 +17,9 @@ use function Env\env;
  * @var string
  */
 $root_dir = dirname(__DIR__);
+if (!defined('LT_ROOT_DIR')) {
+    define('LT_ROOT_DIR', $root_dir);
+}
 
 /**
  * Document Root
@@ -24,6 +27,9 @@ $root_dir = dirname(__DIR__);
  * @var string
  */
 $webroot_dir = $root_dir . '/web';
+if (!defined('LT_WEBROOT_DIR')) {
+    define('LT_WEBROOT_DIR', $webroot_dir);
+}
 
 /**
  * Use Dotenv to set required environment variables and load .env file in root
