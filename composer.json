@@ -1,63 +1,78 @@
 {
-  "name": "pixelgradelt/site",
+  "name": "pixelgradelt/my-site",
   "type": "project",
   "license": "MIT",
   "description": "A Pixelgrade LT WordPress site.",
-  "homepage": "https://pixelgradelt.com",
-  "time": "2021-05-19 01:00:00",
+  "homepage": "https://local.local",
+  "time": "2021-06-30T09:03:17+00:00",
   "authors": [
-    {
-      "name": "Scott Walkinshaw",
-      "email": "scott.walkinshaw@gmail.com",
-      "homepage": "https://github.com/swalkinshaw"
-    },
-    {
-      "name": "Ben Word",
-      "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
-    },
     {
       "name": "Vlad Olaru",
       "email": "vlad@pixelgrade.com",
-      "homepage": "https://thinkwritecode.com"
+      "homepage": "https://thinkwritecode.com",
+      "role": "Development, infrastructure, and product development"
     }
   ],
-  "keywords": [
-    "pixelgradelt", "bedrock", "composer", "roots", "wordpress", "wp", "wp-config"
-  ],
+  "keywords": [],
   "support": {
     "issues": "https://pixelgradelt.com",
     "forum": "https://pixelgradelt.com"
   },
   "repositories": [
+    {
+      "type": "composer",
+      "url": "https://lt-records.local/ltpackagist/",
+      "options": {
+        "ssl": {
+          "verify_peer": false
+        }
+      }
+    },
+    {
+      "type": "composer",
+      "url": "https://repo.packagist.org"
+    }
   ],
   "require": {
-    "php": ">=7.1",
     "composer/installers": "^1.10",
-    "vlucas/phpdotenv": "^5.3",
+    "ext-json": "*",
     "oscarotero/env": "^2.1",
+    "php": ">=7.1",
+    "pixelgradelt-records/part_another-test": "*, >=3.0.0",
+    "pixelgradelt-records/part_test-test": "*, ^4.0",
+    "pixelgradelt-records/part_yet-another": "*",
     "roots/bedrock-autoloader": "^1.0",
     "roots/wordpress": "^5.7",
     "roots/wp-config": "1.0.0",
-    "roots/wp-password-bcrypt": "1.0.0"
+    "roots/wp-password-bcrypt": "1.0.0",
+    "vlucas/phpdotenv": "^5.3"
   },
   "require-dev": {
-    "squizlabs/php_codesniffer": "^3.5.8",
-    "roave/security-advisories": "dev-latest"
+    "roave/security-advisories": "dev-latest",
+    "squizlabs/php_codesniffer": "^3.5.8"
   },
   "config": {
     "optimize-autoloader": true,
     "preferred-install": "dist"
   },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
+  "minimum-stability": "stable",
+  "prefer-stable": false,
   "extra": {
     "installer-paths": {
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
-      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
-      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+      "web/app/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin"
+      ],
+      "web/app/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "web/app/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
     },
-    "wordpress-install-dir": "web/wp"
+    "lt-user": "def502005762a1f7ab01944a6224811e40d61b97df9d0e155281b57a686c1cd9bf3dd1d7e636c69067bae573142d6b9560df6389000ba5e122bdee49947bfe09329ccb6b424c12d1e71416314661763df5d69ec3b5c7c84fad512b94c1fed6ee7df3b07a8b0b0aab80ac2ff855859286a417ffb9d927b7ce8d67b7989fc48c849b79e261f4e235201478d5613a8be7976bc301e45bdf17227d27f0133480",
+    "lt-version": 1,
+    "wordpress-install-dir": "web/wp",
+    "lt-fingerprint": "a787b7bb96c4ab8929f3966039dc08b1"
   },
   "scripts": {
     "post-root-package-install": [

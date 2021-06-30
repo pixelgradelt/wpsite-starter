@@ -41,6 +41,7 @@ if (file_exists($root_dir . '/.env')) {
     if (!env('DATABASE_URL')) {
         $dotenv->required(['DB_NAME', 'DB_USER', 'DB_PASSWORD']);
     }
+    $dotenv->required(['LT_RECORDS_API_KEY', 'LT_RECORDS_API_PWD', 'LT_RECORDS_COMPOSITION_CREATE_URL', 'LT_RECORDS_COMPOSITION_REFRESH_URL',]);
 }
 
 /**
@@ -115,6 +116,14 @@ Config::define('SCRIPT_DEBUG', false);
 ini_set('display_errors', '0');
 
 /**
+ * LT Specific Settings
+ */
+Config::define('LT_RECORDS_API_KEY', env('LT_RECORDS_API_KEY'));
+Config::define('LT_RECORDS_API_PWD', env('LT_RECORDS_API_PWD'));
+Config::define('LT_RECORDS_COMPOSITION_CREATE_URL', env('LT_RECORDS_COMPOSITION_CREATE_URL'));
+Config::define('LT_RECORDS_COMPOSITION_REFRESH_URL', env('LT_RECORDS_COMPOSITION_REFRESH_URL'));
+
+/**
  * Allow WordPress to detect HTTPS when used behind a reverse proxy or a load balancer
  * See https://codex.wordpress.org/Function_Reference/is_ssl#Notes
  */
@@ -128,6 +137,7 @@ if (file_exists($env_config)) {
     require_once $env_config;
 }
 
+// Finally define the actual constants.
 Config::apply();
 
 /**
