@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a08b5251a76a6fe661ee9768b41b7b25",
+    "content-hash": "21cd46cf57415bcf15f0858c91842af3",
     "packages": [
         {
             "name": "composer/installers",
@@ -278,6 +278,80 @@
             "time": "2020-06-11T10:59:27+00:00"
         },
         {
+            "name": "php-amqplib/php-amqplib",
+            "version": "v2.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-amqplib/php-amqplib.git",
+                "reference": "7df8553bd8b347cf6e919dd4a21e75f371547aa0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-amqplib/php-amqplib/zipball/7df8553bd8b347cf6e919dd4a21e75f371547aa0",
+                "reference": "7df8553bd8b347cf6e919dd4a21e75f371547aa0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-bcmath": "*",
+                "php": ">=5.4.0"
+            },
+            "replace": {
+                "videlalvaro/php-amqplib": "self.version"
+            },
+            "require-dev": {
+                "phpdocumentor/phpdocumentor": "^2.9",
+                "phpunit/phpunit": "^4.8",
+                "scrutinizer/ocular": "^1.1",
+                "squizlabs/php_codesniffer": "^2.5"
+            },
+            "suggest": {
+                "ext-sockets": "Use AMQPSocketConnection"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PhpAmqpLib\\": "PhpAmqpLib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alvaro Videla",
+                    "role": "Original Maintainer"
+                },
+                {
+                    "name": "John Kelly",
+                    "email": "johnmkelly86@gmail.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Raúl Araya",
+                    "email": "nubeiro@gmail.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Formerly videlalvaro/php-amqplib.  This library is a pure PHP implementation of the AMQP protocol. It's been tested against RabbitMQ.",
+            "homepage": "https://github.com/php-amqplib/php-amqplib/",
+            "keywords": [
+                "message",
+                "queue",
+                "rabbitmq"
+            ],
+            "support": {
+                "issues": "https://github.com/php-amqplib/php-amqplib/issues",
+                "source": "https://github.com/php-amqplib/php-amqplib/tree/master"
+            },
+            "time": "2018-10-23T18:48:24+00:00"
+        },
+        {
             "name": "phpoption/phpoption",
             "version": "1.7.5",
             "source": {
@@ -345,6 +419,304 @@
                 }
             ],
             "time": "2020-07-20T17:29:33+00:00"
+        },
+        {
+            "name": "pixelgradelt-records/automatewoo",
+            "version": "5.4.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://lt-records.local/ltpackagist/8jWep/automatewoo/5.4.2",
+                "shasum": "4a681c10e2b65ce29c4172edafdf83da1f9efceb"
+            },
+            "require": {
+                "composer/installers": "^1.10"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "WooCommerce",
+                    "homepage": "https://woocommerce.com"
+                }
+            ],
+            "description": "[Custom description] Powerful marketing automation for your WooCommerce store.",
+            "homepage": "https://automatewoo.com",
+            "keywords": [
+                "email"
+            ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false
+                }
+            }
+        },
+        {
+            "name": "pixelgradelt-records/duplicate-post",
+            "version": "4.1.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://lt-records.local/ltpackagist/PB3W8/duplicate-post/4.1.2",
+                "shasum": "84aa69832758ba694472aa924d7f982eb3cf800d"
+            },
+            "require": {
+                "composer/installers": "^1.10"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Enrico Battocchi & Team Yoast",
+                    "homepage": "https://yoast.com"
+                }
+            ],
+            "description": "[Custom description] The go-to tool for cloning posts and pages, including the powerful Rewrite & Republish feature.",
+            "homepage": "https://yoast.com/wordpress/plugins/duplicate-post/",
+            "keywords": [
+                "clone",
+                "copy",
+                "duplicate-post"
+            ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false
+                }
+            }
+        },
+        {
+            "name": "pixelgradelt-records/hive",
+            "version": "1.7.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://lt-records.local/ltpackagist/8D9Ep/hive/1.7.0",
+                "shasum": "bd4269e8745798932884d828a3da6e728236713b"
+            },
+            "require": {
+                "composer/installers": "^1.10",
+                "pixelgradelt-records/automatewoo": "*",
+                "pixelgradelt-records/duplicate-post": "*"
+            },
+            "type": "wordpress-theme",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Pixelgrade",
+                    "homepage": "https://pixelgrade.com/"
+                }
+            ],
+            "description": "An effortless tool for publishers of all kind, cherished for its clean masonry-style layout, modern typography and flexibility. Whether you’re looking to share your own thoughts, write about your latest findings or just have a scrapbook of photos, videos, quotes or other stuff, HIVE is designed to fulfill these and a lot more.",
+            "homepage": "https://demos.pixelgrade.com/hive/",
+            "keywords": [
+                "blog",
+                "bright",
+                "clean",
+                "custom-menu",
+                "editor-style",
+                "elegant",
+                "fashion",
+                "featured-images",
+                "fixed-menu",
+                "geometric",
+                "glamorous",
+                "industrial",
+                "infinite-scroll",
+                "journal",
+                "lifestream",
+                "light",
+                "magazine",
+                "microformats",
+                "minimal",
+                "modern",
+                "multiple-menus",
+                "news",
+                "one-column",
+                "post-formats",
+                "responsive-layout",
+                "right-sidebar",
+                "rtl-language-support",
+                "scrapbooking",
+                "site-logo",
+                "sophisticated",
+                "sticky-post",
+                "theme-options",
+                "threaded-comments",
+                "three-columns",
+                "translation-ready",
+                "two-columns",
+                "video",
+                "white",
+                "yellow"
+            ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false
+                }
+            }
+        },
+        {
+            "name": "pixelgradelt-records/part_another-test",
+            "version": "4.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://lt-records.local/ltpackagist/pW17P/part_another-test/4.1.0",
+                "shasum": "8881124ec918844f01a99623a890fe7a2ba3f067"
+            },
+            "require": {
+                "composer/installers": "^1.10",
+                "php-amqplib/php-amqplib": "2.8.0"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "10up",
+                    "homepage": "http://10up.com"
+                },
+                {
+                    "name": "Chris Marslender",
+                    "email": "chrismarslender@gmail.com",
+                    "homepage": "https://chrismarslender.com/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Darshan Sawardekar",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Job Queue for WordPress",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false
+                }
+            }
+        },
+        {
+            "name": "pixelgradelt-records/part_test-test",
+            "version": "4.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://lt-records.local/ltpackagist/P9gJp/part_test-test/4.1.0",
+                "shasum": "853150e21c6ec3d6e986bbe105fc273247b9d826"
+            },
+            "require": {
+                "composer/installers": "^1.10",
+                "php-amqplib/php-amqplib": "2.8.0",
+                "pixelgradelt-records/hive": "*",
+                "pixelgradelt-records/part_another-test": "*",
+                "pixelgradelt-records/part_yet-another": "*",
+                "pixelgradelt-records/wp-minionsss": "*"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "10up",
+                    "homepage": "http://10up.com"
+                },
+                {
+                    "name": "Chris Marslender",
+                    "email": "chrismarslender@gmail.com",
+                    "homepage": "https://chrismarslender.com/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Darshan Sawardekar",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Job Queue for WordPress",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false
+                }
+            }
+        },
+        {
+            "name": "pixelgradelt-records/part_yet-another",
+            "version": "4.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://lt-records.local/ltpackagist/X3ee8/part_yet-another/4.1.0",
+                "shasum": "9bf9837a67b371ce8767c3d7a6343574560b1d4e"
+            },
+            "require": {
+                "composer/installers": "^1.10",
+                "php-amqplib/php-amqplib": "2.8.0"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "10up",
+                    "homepage": "http://10up.com"
+                },
+                {
+                    "name": "Chris Marslender",
+                    "email": "chrismarslender@gmail.com",
+                    "homepage": "https://chrismarslender.com/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Darshan Sawardekar",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Job Queue for WordPress",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false
+                }
+            }
+        },
+        {
+            "name": "pixelgradelt-records/wp-minionsss",
+            "version": "6.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://lt-records.local/ltpackagist/plxWp/wp-minionsss/6.0.0",
+                "shasum": "9ffc40763b9160c550593423f09841c68e4146e1"
+            },
+            "require": {
+                "composer/installers": "^1.10",
+                "pixelgradelt-records/hive": "*"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "10up",
+                    "homepage": "http://10up.com"
+                },
+                {
+                    "name": "Chris Marslender",
+                    "email": "chrismarslender@gmail.com",
+                    "homepage": "https://chrismarslender.com/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Darshan Sawardekar",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Job Queue for WordPress",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false
+                }
+            }
         },
         {
             "name": "roots/bedrock-autoloader",
@@ -419,6 +791,66 @@
                 }
             ],
             "time": "2020-12-04T15:59:12+00:00"
+        },
+        {
+            "name": "roots/bedrock-disallow-indexing",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/roots/bedrock-disallow-indexing.git",
+                "reference": "6c28192e17cb9e02a5c0c99691a18552b85e1615"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/roots/bedrock-disallow-indexing/zipball/6c28192e17cb9e02a5c0c99691a18552b85e1615",
+                "reference": "6c28192e17cb9e02a5c0c99691a18552b85e1615",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "wordpress-muplugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Word",
+                    "email": "ben@benword.com",
+                    "homepage": "https://github.com/retlehs"
+                },
+                {
+                    "name": "Scott Walkinshaw",
+                    "email": "scott.walkinshaw@gmail.com",
+                    "homepage": "https://github.com/swalkinshaw"
+                },
+                {
+                    "name": "QWp6t",
+                    "email": "hi@qwp6t.me",
+                    "homepage": "https://github.com/qwp6t"
+                }
+            ],
+            "description": "Disallow indexing of your site on non-production environments",
+            "keywords": [
+                "wordpress"
+            ],
+            "support": {
+                "forum": "https://discourse.roots.io/",
+                "issues": "https://github.com/roots/bedrock-disallow-indexing/issues",
+                "source": "https://github.com/roots/bedrock-disallow-indexing/tree/2.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/roots",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/rootsdev",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2020-05-20T01:25:07+00:00"
         },
         {
             "name": "roots/wordpress",
@@ -984,12 +1416,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "ac0d045cdd1a9f1c87a0225a1dcda2bfb71be924"
+                "reference": "7498cba51fb164f181c497edd1cc3e7837df2943"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/ac0d045cdd1a9f1c87a0225a1dcda2bfb71be924",
-                "reference": "ac0d045cdd1a9f1c87a0225a1dcda2bfb71be924",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/7498cba51fb164f181c497edd1cc3e7837df2943",
+                "reference": "7498cba51fb164f181c497edd1cc3e7837df2943",
                 "shasum": ""
             },
             "conflict": {
@@ -1183,8 +1615,8 @@
                 "scheb/two-factor-bundle": ">=0,<3.26|>=4,<4.11",
                 "sensiolabs/connect": "<4.2.3",
                 "serluck/phpwhois": "<=4.2.6",
-                "shopware/core": "<=6.3.5.2",
-                "shopware/platform": "<=6.3.5.2",
+                "shopware/core": "<=6.4.1",
+                "shopware/platform": "<=6.4.1",
                 "shopware/production": "<=6.3.5.2",
                 "shopware/shopware": "<=5.6.9",
                 "silverstripe/admin": ">=1.0.3,<1.0.4|>=1.1,<1.1.1",
@@ -1219,7 +1651,7 @@
                 "sylius/grid": ">=1,<1.1.19|>=1.2,<1.2.18|>=1.3,<1.3.13|>=1.4,<1.4.5|>=1.5,<1.5.1",
                 "sylius/grid-bundle": ">=1,<1.1.19|>=1.2,<1.2.18|>=1.3,<1.3.13|>=1.4,<1.4.5|>=1.5,<1.5.1",
                 "sylius/resource-bundle": "<1.3.14|>=1.4,<1.4.7|>=1.5,<1.5.2|>=1.6,<1.6.4",
-                "sylius/sylius": "<1.6.9|>=1.7,<1.7.9|>=1.8,<1.8.3",
+                "sylius/sylius": "<1.6.9|>=1.7,<1.7.9|>=1.8,<1.8.3|>=1.9,<1.9.5",
                 "symbiote/silverstripe-multivaluefield": ">=3,<3.0.99",
                 "symbiote/silverstripe-queuedjobs": ">=3,<3.0.2|>=3.1,<3.1.4|>=4,<4.0.7|>=4.1,<4.1.2|>=4.2,<4.2.4|>=4.3,<4.3.3|>=4.4,<4.4.3|>=4.5,<4.5.1|>=4.6,<4.6.4",
                 "symbiote/silverstripe-versionedfiles": "<=2.0.3",
@@ -1351,7 +1783,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-24T09:02:34+00:00"
+            "time": "2021-06-29T04:03:09+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -1411,13 +1843,14 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": {
         "roave/security-advisories": 20
     },
-    "prefer-stable": true,
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
+        "ext-json": "*",
         "php": ">=7.1"
     },
     "platform-dev": [],

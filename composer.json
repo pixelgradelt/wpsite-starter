@@ -42,7 +42,6 @@
     "pixelgradelt-records/part_test-test": "*, ^4.0",
     "pixelgradelt-records/part_yet-another": "*",
     "roots/bedrock-autoloader": "^1.0",
-    "roots/bedrock-disallow-indexing": "^2.0",
     "roots/wordpress": "^5.7",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
