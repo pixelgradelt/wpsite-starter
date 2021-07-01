@@ -564,7 +564,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://lt-records.local/ltpackagist/pW17P/part_another-test/4.1.0",
-                "shasum": "8881124ec918844f01a99623a890fe7a2ba3f067"
+                "shasum": "62240468a81c208ba9c84c09f12fc507627b94f9"
             },
             "require": {
                 "composer/installers": "^1.10",
@@ -603,7 +603,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://lt-records.local/ltpackagist/P9gJp/part_test-test/4.1.0",
-                "shasum": "853150e21c6ec3d6e986bbe105fc273247b9d826"
+                "shasum": "62240468a81c208ba9c84c09f12fc507627b94f9"
             },
             "require": {
                 "composer/installers": "^1.10",
@@ -646,7 +646,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://lt-records.local/ltpackagist/X3ee8/part_yet-another/4.1.0",
-                "shasum": "9bf9837a67b371ce8767c3d7a6343574560b1d4e"
+                "shasum": "62240468a81c208ba9c84c09f12fc507627b94f9"
             },
             "require": {
                 "composer/installers": "^1.10",
