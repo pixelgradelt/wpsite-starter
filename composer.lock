@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bf996da965374a60ccc8a2f60229a86d",
+    "content-hash": "e10023c8397a8f425adfb2d7d8fe0743",
     "packages": [
         {
             "name": "composer/installers",
@@ -591,6 +591,24 @@
                 }
             ],
             "description": "Job Queue for WordPress",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false
+                }
+            }
+        },
+        {
+            "name": "pixelgradelt-records/part_spanky",
+            "version": "1.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://lt-records.local/ltpackagist/p0lYp/part_spanky/1.0.0",
+                "shasum": "d782e5e523494a099ae2cbaf6f68c573e2c2b07c"
+            },
+            "require": {
+                "composer/installers": "^1.10"
+            },
+            "type": "wordpress-plugin",
             "transport-options": {
                 "ssl": {
                     "verify_peer": false
@@ -1783,11 +1801,11 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "roave/security-advisories": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "ext-json": "*",
