@@ -1,45 +1,19 @@
 {
-    "name": "pixelgradelt/site",
+    "name": "pixelgradelt/my-site",
     "type": "project",
     "license": "MIT",
     "description": "A Pixelgrade LT WordPress site.",
-    "homepage": "https://pixelgradelt.com",
-    "time": "2021-07-02T11:51:57+00:00",
+    "homepage": "https://local.local",
+    "time": "2021-07-06T11:15:38+00:00",
     "authors": [
         {
             "name": "Vlad Olaru",
             "email": "vlad@pixelgrade.com",
             "homepage": "https://thinkwritecode.com",
             "role": "Development, infrastructure, and product development"
-        },
-        {
-            "name": "George Olaru",
-            "email": "george@pixelgrade.com",
-            "homepage": "https://pixelgrade.com",
-            "role": "Design and product development"
-        },
-        {
-            "name": "Răzvan Onofrei",
-            "email": "razvan@pixelgrade.com",
-            "homepage": "https://pixelgrade.com",
-            "role": "Development and product development"
-        },
-        {
-            "name": "Mădălin Gorbănescu",
-            "email": "madalin@pixelgrade.com",
-            "homepage": "https://pixelgrade.com",
-            "role": "Development"
         }
     ],
-    "keywords": [
-        "pixelgradelt",
-        "bedrock",
-        "composer",
-        "roots",
-        "wordpress",
-        "wp",
-        "wp-config"
-    ],
+    "keywords": [],
     "support": {
         "issues": "https://pixelgradelt.com",
         "forum": "https://pixelgradelt.com"
@@ -78,11 +52,11 @@
         "squizlabs/php_codesniffer": "^3.5.8"
     },
     "config": {
-        "optimize-autoloader": true,
-        "preferred-install": "dist"
+        "optimize-autoloader": false,
+        "preferred-install": "dev"
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
+    "minimum-stability": "stable",
+    "prefer-stable": false,
     "extra": {
         "installer-paths": {
             "web/app/mu-plugins/{$name}/": [
@@ -145,16 +119,20 @@
                 ]
             }
         },
-        "lt-user": "def50200eec6f0cc74b51875cb7e9513c5886b411287df71bcc7f1ded1fe7f80c119fa467ee28f49eefd69f7c1080a6078fb02963430253230d03de58056cee9874ed3b44536f99fbc3f6d149c7213cb2c76717bd1a084e1fffbb677b50add0736f4dcc6c7fae0541b14fc60aa657621083a71926fc4acb37c08c3ab03155d7d6379df9e7ccff639abf15dabfb63ce72f2e30e6654eb7e532ce54da3e2b7",
+        "lt-user": "def502007acdce584741fbbee24a93b3517fa0dfce03718a125576a84075ef2da9326fa903b8211120a5a767e4e23027fa093ce9b0c0e5d568030597a46543fc9ebc60bea945b8e5eba30942758860cc56acc9958002bc23613e10cef5b0b6a6df043685c3b4e0403f9644b6ef151a96fa02d42a7fdea2c370f1144fb85c559d53191e63d9703e774c8d05853a01d306a00af55db139e5f193c398bce05c62cd58f14668226d8564223f567901cb1532",
         "lt-version": "1.1.0",
+        "something": "yet",
         "wordpress-install-dir": "web/wp",
-        "lt-fingerprint": "7c8b29a4cf6084a6c596e5036abfef91"
+        "lt-fingerprint": "9dbfeab1e8eb0ad352c0c5c696444065"
     },
     "scripts": {
         "post-root-package-install": [
             "php -r \"copy('.env.example', '.env');\""
         ],
         "test": [
+            "phpcs"
+        ],
+        "test2": [
             "phpcs"
         ]
     }
